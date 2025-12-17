@@ -4,7 +4,7 @@ from flask import Flask, request, render_template, redirect, url_for
 import pandas as pd
 import os
 
-app = Flask(__name__, template_folder='../frontend', static_folder='../frontend')
+app = Flask(__name__)
 
 # Get the directory where this script is located
 script_dir = os.path.dirname(os.path.abspath(__file__))
