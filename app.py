@@ -4,7 +4,7 @@ from flask import Flask, request, render_template
 import pandas as pd
 import os
 
-app = Flask(__name__, template_folder='../frontend', static_folder='../frontend')
+app = Flask(__name__)
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 excel_path = os.path.join(script_dir, 'events.xlsx')
